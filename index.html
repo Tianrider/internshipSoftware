@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Hadiwijaya</title>
+
+    <link href="src/input.css" rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../static/assets/ch.png" alt="logo" class="logo">
+        <ul>
+            <li>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" id="darkModeToggle"></span>
+                </label>
+            </li>
+            <li><a href="">Home</a></li>
+            <li><a href="#aboutmelink">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#socialmedialink">Social Media</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="flex flex-row items-center justify-evenly" id="header">
+        <div class="title text-3xl">
+            <h2 style="font-family: 'Inter Tight', sans-serif;">HI, I'm</h2>
+            <h1>Christian Hadiwijaya</h1>
+            <h3 class="text-amber-900 italic"><i>Undergraduate Computer Engineering Student</i></h3>
+        </div>
+        <div class="profile_picture">
+            <img class="object-cover mt-[50px] align-middle" src="static/assets/Profile_Picture-removebg-preview.png" alt="profile picture">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="containers" id="aboutmelink">
+        <h1>About Me</h1>
+        <p><center> 
+            <span id="aboutmetext">Enthusiastic and aspiring first year Computer Engineering student at the University of Indonesia. Passionate about exploring the intersection of hardware and software. 
+            Currently honing my skills in areas of software development. 
+            I thrive on challenges that allow me to push the boundaries of what's possible.
+            Eager to connect with like-minded professionals, industry experts, and companies 
+            to collaborate on exciting projects and contribute to the ever-evolving world of technology.
+            </span>
+            </center>
+       </p>
+    </div>
+    
+    <hr>
+
+    <div class="containers" id="education">
+        <h1>Education</h1>
+        <div class="educations">
+            <h3>University of Indonesia</h3>
+            <p>Computer Engineering</p>
+            <p>2023 - Present</p>
+        </div>
+        <div class="educations">
+            <h3>SMAN 55 Jakarta</h3>
+            <p>Science</p>
+            <p>2019 - 2022</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="containers flex flex-col justify-center items-center text-center" id="socialmedialink">
+        <h1>Social Media</h1>
+        <div class="flex p-[20px] pb-10 gap-5">
+            <a href="https://www.instagram.com/tianhd_/" target="_blank"><img class="socialmediaIMG [90px] h-[90px] hover:scale-110" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram"></a>
+            <a href="https://linkedin.com/in/christianhadiwijaya" target="_blank"><img class="socialmediaIMG [90px] h-[90px]" src="static/assets/linkedin.png"></a>
+            <a href="https://github.com/tianrider" target="_blank"><img class="socialmediaIMG [90px] h-[90px]" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="flex flex-col form_container">
+        <h1 class="flex items-center justify-center" id="ContactMeh1">Contact Me</h1>
+        <div class="contact_form">
+            <form class="message-form" name="message-form" onsubmit="return validateform()" id="contact">
+                <div id="yourname">
+                    <label for="inputsubject" class="formLabel">Subject</label>
+                    <input placeholder="Enter Subject..."
+                        id="inputsubject"
+                        type="text"
+                        name="valid-subject"
+                        maxlength="24"
+                        min="5"
+                    >
+                </div>
+
+                <div id="message">
+                    <label for="inputmsg" class="formLabel">Message</label>
+                        <textarea placeholder="Enter Your Message..." 
+                        type="text"
+                        id="inputmsg"
+                        name="valid-msg"
+                        maxlength="560"
+                        min="10"
+                        ></textarea> 
+                </div>
+
+                <div class="button">
+                    <button id="Send">Send</button>
+                </div>
+                    
+            </form>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
